@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 const dbURI =
-  "mongodb+srv://akashbkumar30:root@mern-cluster.8zsq2.mongodb.net/?retryWrites=true&w=majority&appName=MERN-cluster";
+  "mongodb-url";
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
