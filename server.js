@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT =4000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 const dbURI =
   "mongodb+srv://akashbkumar30:root@mern-cluster.8zsq2.mongodb.net/?retryWrites=true&w=majority&appName=MERN-cluster";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(dbURI);
 
 
 const Note = mongoose.model("Note", {
